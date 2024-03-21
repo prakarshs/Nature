@@ -45,6 +45,15 @@ var tl2 = gsap.timeline({
     scrub : 3
 }})
 
+var tl3 = gsap.timeline({
+    scrollTrigger : {
+    trigger : ".home h1",
+    scroller : ".main",
+    start : "top -155%",
+    end : "top -200%",
+    scrub : 3
+}})
+
 tl.to(".home h1", {
     x: -100,
 },"anim")
@@ -61,10 +70,16 @@ tl2.to(".main",{
     backgroundColor :"#b3b3b3"
 })
 
+tl3.to(".main",{
+    backgroundColor : "#121212"
+})
+
 var crsr = document.querySelector("#cursor");
 var main = document.querySelector(".main");
 main.addEventListener("mousemove", function(dets){
     crsr.style.left = dets.x + 5+ "px";
     crsr.style.top = dets.y +5+ "px";
 })
+
+
 
