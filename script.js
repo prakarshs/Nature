@@ -64,7 +64,7 @@ tl2.to(".main",{
 var crsr = document.querySelector("#cursor");
 var main = document.querySelector(".main");
 main.addEventListener("mousemove", function(dets){
-    crsr.style.left = dets.x + "px";
-    crsr.style.top = dets.y + "px";
+    crsr.style.left = dets.x + 5+ "px";
+    crsr.style.top = dets.y +5+ "px";
 })
 
