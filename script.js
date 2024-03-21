@@ -27,12 +27,21 @@ function smoothScroll(){
 
 smoothScroll();
 
-var tl = gsap.timeline({scrollTrigger : {
+var tl = gsap.timeline({
+    scrollTrigger : {
     trigger : ".home h1",
     scroller : ".main",
-    markers : true,
     start : "top 25%",
     end : "top 0",
+    scrub : 2.5
+}})
+
+var tl2 = gsap.timeline({
+    scrollTrigger : {
+    trigger : ".home h1",
+    scroller : ".main",
+    start : "top -85%",
+    end : "top -120%",
     scrub : 3
 }})
 
@@ -44,4 +53,11 @@ tl.to(".home h2", {
     x: 100,
 },"anim")
 
+tl.to(".home video",{
+    width:"90%"
+},"anim")
+
+tl2.to(".main",{
+    backgroundColor :"#b3b3b3"
+})
 
