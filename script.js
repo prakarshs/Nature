@@ -61,3 +61,10 @@ tl2.to(".main",{
     backgroundColor :"#b3b3b3"
 })
 
+var crsr = document.querySelector("#cursor");
+var main = document.querySelector(".main");
+main.addEventListener("mousemove", function(dets){
+    crsr.style.left = dets.x + "px";
+    crsr.style.top = dets.y + "px";
+})
+

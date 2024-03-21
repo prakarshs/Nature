@@ -15,6 +15,15 @@ body {
     height: 100%;
     width: 100%;
 }
+#cursor{
+    background-color: #1db954;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    z-index: 100;
+    position: fixed;
+    transition: all linear 0.1s;
+}
 .main{
     background-color: #121212;
 }
