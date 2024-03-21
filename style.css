@@ -48,15 +48,15 @@ body {
     justify-content: center;
 }
 .home>h1{
-    font-size: 8vw;
+    font-size: 6vw;
     font-weight: 800;
     margin-top: 18vh;
-    margin-left: 7vw;
+    margin-left: 8vw;
 }
 .home>h2{
-    font-size: 8vw;
+    font-size: 6vw;
     font-weight: 800;
-    margin-left: 16vw;
+    margin-left: 12vw;
 }
 .home>video{
    width: 65%;

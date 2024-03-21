@@ -26,3 +26,22 @@ function smoothScroll(){
 }
 
 smoothScroll();
+
+var tl = gsap.timeline({scrollTrigger : {
+    trigger : ".home h1",
+    scroller : ".main",
+    markers : true,
+    start : "top 25%",
+    end : "top 0",
+    scrub : 3
+}})
+
+tl.to(".home h1", {
+    x: -100,
+},"anim")
+
+tl.to(".home h2", {
+    x: 100,
+},"anim")
+
+
